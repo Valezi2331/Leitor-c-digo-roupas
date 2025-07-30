@@ -2,7 +2,7 @@
 
 #include <string.h>
 
-#include <stdlib.h> // Para atoi, se necessário, ou sscanf
+#include <stdlib.h> 
 
 
 
@@ -34,7 +34,7 @@ int main() {
 
     int acaoadicional;
 
-    char codigoCompleto[15]; // Aumentei o tamanho para códigos maiores
+    char codigoCompleto[15]; 
 
 
 
@@ -148,7 +148,7 @@ int main() {
 
         case 14:
 
-            strcpy(peca, "Calça"); // Duplicado no seu código original
+            strcpy(peca, "Calça"); 
 
             break;
 
