@@ -1,0 +1,545 @@
+#include <stdio.h>
+
+#include <string.h>
+
+#include <stdlib.h> // Para atoi, se necessário, ou sscanf
+
+
+
+int main() {
+
+
+
+    //Variáveis código
+
+    char peca[50];
+
+    int codigopeca;
+
+    char tamanho[50];
+
+    int codigotamanho;
+
+    char modelo[50];
+
+    int codigomodelo;
+
+    char cor[50];
+
+    int codigocor;
+
+    char adicional[50];
+
+    int codigoadicional;
+
+    int acaoadicional;
+
+    char codigoCompleto[15]; // Aumentei o tamanho para códigos maiores
+
+
+
+    printf("Digite o código:\n");
+
+    scanf("%s", codigoCompleto);
+
+
+
+    sscanf(codigoCompleto, "%2d%2d%2d%2d%2d", &codigopeca, &codigotamanho, &codigomodelo, &codigocor, &codigoadicional);
+
+    
+
+    if (codigoadicional == 0) {
+
+        acaoadicional = 2; 
+
+    } else {
+
+        acaoadicional = 1; 
+
+    }
+
+    
+
+    switch (codigopeca) {
+
+        case 99:
+
+            strcpy(peca, "");
+
+            break;
+
+        case 1:
+
+            strcpy(peca, "Calça");
+
+            break;
+
+        case 2:
+
+            strcpy(peca, "Short");
+
+            break;
+
+        case 3:
+
+            strcpy(peca, "Saia");
+
+            break;
+
+        case 4:
+
+            strcpy(peca, "Camiseta");
+
+            break;
+
+        case 5:
+
+            strcpy(peca, "Regata");
+
+            break;
+
+        case 6:
+
+            strcpy(peca, "Blusa de frio");
+
+            break;
+
+        case 7:
+
+            strcpy(peca, "Vestido");
+
+            break;
+
+        case 8:
+
+            strcpy(peca, "Blusa");
+
+            break;
+
+        case 9:
+
+            strcpy(peca, "Top");
+
+            break;
+
+        case 10:
+
+            strcpy(peca, "Conjunto(saia e blusa) ");
+
+            break;
+
+        case 11:
+
+            strcpy(peca, "Meia-calça ");
+
+            break;
+
+        case 12:
+
+            strcpy(peca, "Touca");
+
+            break;
+
+        case 13:
+
+            strcpy(peca, "Casaco");
+
+            break;
+
+        case 14:
+
+            strcpy(peca, "Calça"); // Duplicado no seu código original
+
+            break;
+
+        default:
+
+            strcpy(peca, "Desconhecida");
+
+            break;
+
+    }
+
+
+
+    switch (codigotamanho) {
+
+        case 1:
+
+            strcpy(tamanho, "PP");
+
+            break;
+
+        case 2:
+
+            strcpy(tamanho, "P");
+
+            break;
+
+        case 3:
+
+            strcpy(tamanho, "M");
+
+            break;
+
+        case 4:
+
+            strcpy(tamanho, "G");
+
+            break;
+
+        case 5:
+
+            strcpy(tamanho, "GG");
+
+            break;
+
+        case 6:
+
+            strcpy(tamanho, "G1");
+
+            break;
+
+        case 7:
+
+            strcpy(tamanho, "G2");
+
+            break;
+
+        case 8:
+
+            strcpy(tamanho, "G3");
+
+            break;
+
+        case 9:
+
+            strcpy(tamanho, "tamanho único");
+
+            break;
+
+        default:
+
+            strcpy(tamanho, "Desconhecida");
+
+            break;
+
+    }
+
+
+
+    switch (codigomodelo) {
+
+        case 99:
+
+            strcpy(modelo, "");
+
+            break;
+
+        case 1:
+
+            strcpy(modelo, "legging");
+
+            break;
+
+        case 2:
+
+            strcpy(modelo, "jeans");
+
+            break;
+
+        case 3:
+
+            strcpy(modelo, "malha");
+
+            break;
+
+        case 4:
+
+            strcpy(modelo, "balone");
+
+            break;
+
+        case 5:
+
+            strcpy(modelo, "lurex");
+
+            break;
+
+        case 6:
+
+            strcpy(modelo, "plissada");
+
+            break;
+
+        case 7:
+
+            strcpy(modelo, "academia");
+
+            break;
+
+        case 8:
+
+            strcpy(modelo, "poliamida");
+
+            break;
+
+        case 9:
+
+            strcpy(modelo, "tricô");
+
+            break;
+
+        case 10:
+
+            strcpy(modelo, "social");
+
+            break;
+
+        case 11:
+
+            strcpy(modelo, "risca de giz ");
+
+            break;
+
+        case 12:
+
+            strcpy(modelo, "quimono");
+
+            break;
+
+        case 13:
+
+            strcpy(modelo, "tomara que caia");
+
+            break;
+
+        case 14:
+
+            strcpy(modelo, "linho");
+
+            break;
+
+        case 15:
+
+            strcpy(modelo, "modal");
+
+            break;
+
+        case 16:
+
+            strcpy(modelo, "gola quadrada ");
+
+            break;
+
+        case 17:
+
+            strcpy(modelo, "lã");
+
+            break;
+
+        case 18:
+
+            strcpy(modelo, "masculino");
+
+            break;
+
+        case 19:
+
+            strcpy(modelo, "manga borboleta ");
+
+            break;
+
+        case 20:
+
+            strcpy(modelo, "amarração pescoço ");
+
+            break;
+
+        case 21:
+
+            strcpy(modelo, "teddy");
+
+            break;
+
+        case 22:
+
+            strcpy(modelo, "ribana");
+
+            break;
+
+        case 23:
+
+            strcpy(modelo, "duna");
+
+            break;
+
+        default:
+
+            strcpy(modelo, "");
+
+            break;
+
+    }
+
+
+
+    switch (codigocor) {
+
+        case 99:
+
+            strcpy(cor, "");
+
+            break;
+
+        case 1:
+
+            strcpy(cor, "azul");
+
+            break;
+
+        case 2:
+
+            strcpy(cor, "rosa");
+
+            break;
+
+        case 3:
+
+            strcpy(cor, "vermelho");
+
+            break;
+
+        case 4:
+
+            strcpy(cor, "laranja");
+
+            break;
+
+        case 5:
+
+            strcpy(cor, "preto");
+
+            break;
+
+        case 6:
+
+            strcpy(cor, "prata");
+
+            break;
+
+        case 7:
+
+            strcpy(cor, "amarela");
+
+            break;
+
+        case 8:
+
+            strcpy(cor, "onça");
+
+            break;
+
+        case 9:
+
+            strcpy(cor, "floral");
+
+            break;
+
+        case 10:
+
+            strcpy(cor, "branca");
+
+            break;
+
+        case 11:
+
+            strcpy(cor, "translúcida");
+
+            break;
+
+        case 12:
+
+            strcpy(cor, "colorida");
+
+            break;
+
+        case 13:
+
+            strcpy(cor, "vinho");
+
+            break;
+
+        case 14:
+
+            strcpy(cor, "marrom");
+
+            break;
+
+        case 15:
+
+            strcpy(cor, "marrom crepe");
+
+            break;
+
+        case 16:
+
+            strcpy(cor, "verde");
+
+            break;
+
+        case 17:
+
+            strcpy(cor, "bege");
+
+            break;
+
+        default:
+
+            strcpy(cor, "");
+
+            break;
+
+    }
+
+
+
+    if (acaoadicional == 1) {
+
+        switch (codigoadicional) {
+
+            case 1:
+
+                strcpy(adicional, "com cinto");
+
+                break;
+
+            case 2: 
+
+                strcpy(adicional, "");
+
+                break;
+
+            default:
+
+                strcpy(adicional, "");
+
+                break;
+
+        }
+
+    } else {
+
+        strcpy(adicional, ""); 
+
+    }
+
+
+
+    printf("%s %s %s %s %s\n", peca, tamanho, modelo, cor, adicional);
+
+
+
+    return 0;
+
+}
